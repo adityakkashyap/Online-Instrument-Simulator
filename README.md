@@ -1,4 +1,4 @@
-_**Online Musical Instrument Simulator******_
+_**Online Musical Instrument Simulator**_
 
 **Overview**
 The Online Musical Instrument Simulator is a simple react application that allows users to play virtual drums and piano online. Users can simulate playing drums and piano by clicking on virtual keys displayed on the screen. The application is built using React for the frontend and MongoDB for data storage and NodeJS for backend.
