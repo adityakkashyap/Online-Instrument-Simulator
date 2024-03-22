@@ -1,0 +1,284 @@
+.body {
+    background-image: linear-gradient(45deg,rgb(251, 255, 224),rgb(246, 187, 132));
+    zoom: 0.8;
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.drums {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-top: -45px;
+}
+
+.beatz {
+    text-align: center;
+    text-decoration:wavy;
+    font-size: 60px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.655);
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.caption {
+    text-decoration:wavy;
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    text-align:center;
+    margin-top: 0px;
+}
+
+
+.set-left {
+    float: left;
+    text-align: center;
+    position: relative;
+    padding: 40px;
+    border: none;
+    border-radius: 5ch;
+    width: 43%;
+    box-shadow: 2px 2px 5px 5px gray;
+    background-color: #beecdb;
+    margin-top: 100px;
+}
+
+.set-right {
+    float: right;
+    text-align: center;
+    padding: 50px;
+    border: none;
+    border-radius: 5ch;
+    width: 43%;
+    justify-items: right;
+    height: 590px;
+    box-shadow: 2px 2px 5px 5px gray;
+    background-color: #beecdb;
+    margin-top: 100px;
+}
+
+[class^="drum"][class$="a"], 
+[class^="drum"][class$="b"],
+[class^="drum"][class$="c"],
+[class^="drum"][class$="d"],
+[class^="drum"][class$="e"],
+[class^="drum"][class$="f"],
+[class^="drum"][class$="g"],
+[class^="drum"][class$="h"],
+[class^="drum"][class$="i"] {
+    outline: none;
+    font-size: 80px;
+    margin: 5px;
+    color: rgb(71, 71, 72);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    border 5px solid rgba(0, 0, 0, 0.183);
+    border-radius: 10px;
+    font-weight: bolder;
+    display: inline-block;
+    background-image: linear-gradient(180deg,rgb(254, 228, 204),rgb(255, 255, 255));
+    padding: 40px;
+    box-shadow: 3px 3px 5px;
+}
+
+[class^="drum"][class$="a"]{
+    background-image: url(images/kick.png);
+    background-position: center;
+    background-size: 180px; 
+}
+
+[class^="drum"][class$="b"] {
+    background-image: url(images/hihat.png);
+    background-position: center;
+    background-size: 180px; 
+}
+
+[class^="drum"][class$="c"] {
+    background-image: url(images/snare.png);
+    background-position: center;
+    background-size: 180px; 
+}
+
+[class^="drum"][class$="d"]{
+    background-image: url(images/open\ hi\ hat.png);
+    background-position: center;
+    background-size: 180px; 
+}
+
+[class^="drum"][class$="e"]{
+    background-image: url(images/hi\ tom.png);
+    background-position: center;
+    background-size: 180px; 
+}
+
+[class^="drum"][class$="f"] {
+    background-image: url(images/low\ tom.png);
+    background-position: center;
+    background-size: 180px; 
+}
+
+[class^="drum"][class$="g"] {
+    background-image: url(images/tambo.jpeg);
+    background-position: center;
+    background-size: 145px; 
+}
+
+[class^="drum"][class$="h"] {
+    background-image: url(images/low\ tom.png);
+    background-position: center;
+    background-size: 180px; 
+}
+
+[class^="drum"][class$="i"] {
+    background-image: url(images/low\ tom.png);
+    background-position: center;
+    background-size: 180px; 
+}
+
+
+[class^="track"][class$="A"], 
+[class^="track"][class$="B"],
+[class^="track"][class$="C"],
+[class^="track"][class$="D"],
+[class^="track"][class$="E"],
+[class^="track"][class$="F"] {
+    outline: none;
+    font-size: 80px;
+    margin: 5px;
+    color: rgb(71, 71, 72);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    border 5px solid rgba(0, 0, 0, 0.183);
+    border-radius: 10px;
+    font-weight: bolder;
+    display: inline-block;
+    background-image: linear-gradient(180deg,rgb(254, 228, 204),rgb(255, 255, 255));
+    padding: 40px;
+    box-shadow: 3px 3px 5px;
+}
+
+.backing-track {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pressed {
+    /* Define your desired animation or style here */
+    transform: scale(1.1);
+    transition: transform 0.1s ease; /* Add a transition effect for a smoother animation */
+}
+
+.pressedA {
+    background-image: url("https://i.kym-cdn.com/photos/images/original/000/945/952/283.gif");
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    float: left;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    transition: all 0.3s;
+    left: -20%; /* Initially hidden */
+}
+.content {
+    margin-left: 0; /* Adjust for the width of the sidebar */
+    transition: margin-left 0.3s;
+}
+
+.button.pianoKey {
+    /* Your styles for the piano keys */
+    background-color: #f1f1f1;
+    /* Add any other styles needed for the piano keys */
+  }
+
+.sidebarButton {
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: rgb(167, 196, 242);
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.sidebarButton:hover {
+    font-size: 45px;
+    transition: 0.3s;
+}
+
+.content {
+    margin-left: 0; /* Adjust for the width of the sidebar */
+    transition: margin-left 0.3s;
+    padding: 100px; /* Adding some space inside the content box */
+}
+
+.sidebar {
+    padding-top: 80px;
+    margin-top: -2px;
+    padding-left: 20px;
+    width: 18%;
+    background-color: #b1e9d4;
+    float: left;
+    position: fixed;
+    overflow-y: auto;
+    transition: all 0.3s;
+    left: -20%; /* Initially hidden */
+    border-radius: 20px 20px 50px 50px; /* Rounded edges */
+    border: 1px solid #ccc; /* Adding a border */
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #36393a;
+    font-size: 50px;
+}
+
+.para {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.Aboutlink {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.Aboutlink:hover {
+    font-family: 'Poppins', sans-serif;
+    color: brown;
+    font-size: 30px;
+}
+
+.painoLink{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.drumLink{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.painoLink:hover{
+    font-family: 'Poppins', sans-serif;
+    color: brown;
+    font-size: 30px;
+}
