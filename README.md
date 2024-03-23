@@ -1,6 +1,7 @@
 # Online Musical Instrument Simulator
 
-![Alt text](https://drive.google.com/file/d/1u0qOK-_L5mBESwtlnc-ThgWMTaVsHNQh/view?usp=drive_link)
+<img width="1425" alt="Screenshot 2024-03-22 at 6 58 05 PM" src="https://github.com/adityakkashyap/Online-Instrument-Simulator/assets/143923960/c3b5a00c-da3b-477d-afb0-d959b5493ce5">
+
 
 ## **Overview**
 The Online Musical Instrument Simulator is a simple react application that allows users to play virtual drums and piano online. 
